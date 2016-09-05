@@ -1,0 +1,7 @@
+{
+  "generator-phaser": {
+    "projectName": "firstPhaserGame",
+    "esVersion": 6,
+    "gameFolder": "boilerplate"
+  }
+}
