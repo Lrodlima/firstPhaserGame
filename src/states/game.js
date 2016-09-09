@@ -2,12 +2,7 @@ class Game extends Phaser.State {
 
   constructor() {
     super();
-    var player;
-    var platforms;
-    var cursors;
-    var starts;
-    var score=0;
-    var scoreText;
+    this.score = 0;
   }
 
   
@@ -27,7 +22,7 @@ class Game extends Phaser.State {
     this.platforms.enableBody = true;
 
     // Here we create the ground.
-    var ground = this.platforms.create(0, this.game.height - 400, 'ground');
+    var ground = this.platforms.create(0, this.game.height - 100, 'ground');
 
     //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
     ground.scale.setTo(2, 2);
